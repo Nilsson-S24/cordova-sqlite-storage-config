@@ -35,7 +35,8 @@
     <platform name="android">
         <!-- Cordova >= 3.0.0 -->
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="SQLitePlugin" android:exported=“false” >
+            <feature name="SQLitePlugin">
+                <param name="android:exported" vale=“false” />
                 <param name="android-package" value="io.sqlc.SQLitePlugin"/>
             </feature>
         </config-file>
